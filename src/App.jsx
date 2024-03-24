@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Options from './components/Options/Options';
 import Feedback from './components/Feedback/Feedback';
 import Description from './components/Description/Description';
