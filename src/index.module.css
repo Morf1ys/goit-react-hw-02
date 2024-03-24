@@ -3,7 +3,7 @@
 body {
   font-family: sans-serif;
   line-height: 1.5;
-  background-color: aqua !important;
+  background-color: #ee82ee !important;
 }
 
 h1,
@@ -28,4 +28,17 @@ img {
 }
 ul {
   list-style: none;
+}
+
+.cont-app {
+  border: 2px solid black;
+  width: 640px;
+  margin: 0 auto;
+  height: 270px;
+  background-color: #b0e0e6;
+  margin-top: 200px;
+  border-radius: 10px;
+}
+.inf-txt {
+  padding-left: 20px;
 }

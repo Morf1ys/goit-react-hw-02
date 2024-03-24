@@ -1,0 +1,21 @@
+.cont-feed {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px 15px 20px;
+  gap: 2px;
+}
+.list {
+  color: green;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sp-lis-ne {
+  color: #9acd32;
+  font-size: 15px;
+  font-weight: bold;
+}
+.sp-lis-bd {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+}
