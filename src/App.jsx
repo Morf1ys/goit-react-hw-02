@@ -1,9 +1,10 @@
+// App.jsx
 import { useState, useEffect } from 'react';
 import Options from './components/Options/Options';
 import Feedback from './components/Feedback/Feedback';
 import Description from './components/Description/Description';
 import Notification from './components/Notification/Notification';
-import css from './index.module.css'
+import css from './index.module.css';
 
 export default function App() {
   const initialFeedback = JSON.parse(localStorage.getItem('feedback')) || {
@@ -35,9 +36,11 @@ export default function App() {
     <div className={css['cont-app']}>
       <Description />
       <Options updateFeedback={updateFeedback} handleReset={handleReset} totalFeedback={totalFeedback} />
-      {totalFeedback > 0 ? <Feedback feedback={feedback} /> : <Notification />}
-      {totalFeedback > 0 && <p className={css['inf-txt']}>Total feedback: {totalFeedback}</p>}
-      {totalFeedback > 0 && <p className={css['inf-txt']}>Positive feedback: {positivePercentage}%</p>}
+      {totalFeedback > 0 ? (
+        <Feedback feedback={feedback} totalFeedback={totalFeedback} positivePercentage={positivePercentage} />
+      ) : (
+        <Notification />
+      )}
     </div>
   );
 }
